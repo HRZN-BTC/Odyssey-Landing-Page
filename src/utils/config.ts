@@ -384,7 +384,7 @@ When You create an account with Us, You must provide accurate, complete, and up-
 You agree not to use:  
 - Inappropriate, offensive, or misleading usernames.  
 - The Service for cheating, fraudulent activity, spamming, harassment, hacking, or any other abusive or unlawful conduct.  
-- The Service in a way that disrupts or negatively impacts other users’ experiences.  
+- The Service in a way that disrupts or negatively impacts other users' experiences.  
 
 The Company reserves the right to suspend or terminate Your account at any time if You engage in prohibited conduct.  
 

@@ -5,11 +5,8 @@ import { ConfigContext } from "../../utils/configContext";
 import type { TemplateConfig } from "../../utils/configType";
 import Header from "./_components/header";
 import Features from "./_components/features";
-import Partners from "./_components/partners";
 import Faq from "./_components/faq";
 import WhyOdyssey from "./_components/whyOdyssey";
-// import Pricing from "./_components/pricing";
-import Testimonials from "./_components/testimonials";
 
 interface Props {
   config: TemplateConfig;
