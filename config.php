@@ -52,7 +52,7 @@ $featuresScreenshots = [
             "badge" => "Explore",
             "title" => "Explore",
             "description" => "Glossary, resources, and Bitcoin history — all in one place.",
-            "image" => "/assets/feature_darkmode.webp",
+            "image" => "/assets/toolkit.png",
         ],
     ]
 ];
