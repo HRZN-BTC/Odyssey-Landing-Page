@@ -1,190 +1,169 @@
-<div align="center">
-  <img src="public/logo.png" alt="Odyssey Logo" width="200" height="200">
-  
-  # Odyssey: Your Bitcoin Journey Begins Here
-  
-  *Embark on an epic adventure to master Bitcoin and unlock the future of finance*
+![SCR-20250821-tain](https://github.com/user-attachments/assets/b832addf-285f-44ee-a751-71d78927bcdf)
 
-[![Download on the App Store](https://img.shields.io/badge/Download_on_the_App_Store-007AFF?style=for-the-badge&logo=app-store&logoColor=white)](https://apps.apple.com/us/app/odyssey-your-bitcoin-journey/id6749882142)
-[![Get it on Google Play](https://img.shields.io/badge/Get_it_on_Google_Play-414141?style=for-the-badge&logo=google-play&logoColor=white)](https://play.google.com/store/apps/details?id=com.odyssey.odysseybtcapp&hl=en_US)
+# Modern App Landing Page Template
 
-</div>
+A professional, ready-to-use landing page template for mobile apps. Built with PHP and Tailwind CSS, this template is designed for developers who want to quickly create a beautiful website for their mobile application.
 
-## 🌟 What is Odyssey?
+## 🚀 Quick Setup (5 Minutes)
 
-Odyssey is a **gamified mobile app** designed to educate beginners about Bitcoin through an **adventure-themed experience**. Sail through a cosmic sea, complete quests, track prices with the Price Compass, plan investments with the DCA Treasure Planner, and engage with a community to master Bitcoin basics.
+1. **Install dependencies**:
+   ```bash
+   npm install
+   ```
 
-### 🎯 The Problem We Solve
+2. **Build CSS**:
+   ```bash
+   npm run build
+   ```
 
-Bitcoin can be intimidating for beginners. Complex terminology, volatile markets, and overwhelming technical concepts often deter newcomers from entering the crypto space. **Odyssey transforms this journey into an engaging adventure**, making Bitcoin education accessible, fun, and rewarding.
+3. **Customize your app** (see below)
 
-## 🌍 Why Learn About Bitcoin?
+4. **Launch**:
+   ```bash
+   php -S localhost:8000
+   ```
 
-### 💰 **Financial Sovereignty**
-- Take control of your money without relying on banks or governments
-- Access global financial services 24/7
-- Protect your wealth from inflation and economic instability
+## 📝 How to Customize for Your App
 
-### 🌐 **Global Accessibility**
-- Send money anywhere in the world instantly and cheaply
-- No need for traditional banking infrastructure
-- Perfect for remittances and international transactions
+### Step 1: Update App Information
+Edit `config.php` and update these basic details:
 
-### 🔒 **Security & Transparency**
-- Cryptographically secure transactions
-- Transparent blockchain technology
-- Your keys, your Bitcoin - true ownership
+```php
+$common = [
+    'appName' => "Your App Name",                    // Replace with your app name
+    'appTitle' => "Your app tagline here",           // Main headline
+    'appDescription' => "Describe what your app does", // App description
+    'appIcon' => "/assets/app_icon.webp",            // Your app icon
+    'supportEmail' => "support@yourapp.com",         // Your support email
+    'appStoreUrl' => "https://apps.apple.com/...",   // Your App Store link
+    'googlePlayUrl' => "https://play.google.com/...", // Your Google Play link
+    'screenshotRoundedCorners' => true,              // true = rounded, false = sharp corners
+];
+```
 
-### 📈 **Investment Opportunity**
-- Limited supply (only 21 million Bitcoin will ever exist)
-- Growing institutional adoption
-- Hedge against traditional financial systems
+### Step 2: Add Your App Screenshots
+1. Place your screenshots in the `/assets/` folder
+2. Update the paths in `config.php`:
 
-### 🚀 **Future-Proof Technology**
-- Understanding the technology that's reshaping finance
-- Early adoption of revolutionary monetary system
-- Skills that will be valuable in the digital economy
+```php
+// Hero section screenshot
+$home = [
+    "screenshot" => "/assets/your_main_screenshot.png",
+];
 
-## 🎮 How Odyssey Makes Bitcoin Learning Fun
+// Feature screenshots
+$featuresScreenshots = [
+    "featuresList" => [
+        [
+            "title" => "Easy Setup",
+            "description" => "Get started in minutes",
+            "image" => "/assets/feature_1.png",      // Your screenshot here
+        ],
+        [
+            "title" => "Smart Notifications", 
+            "description" => "Never miss important updates",
+            "image" => "/assets/feature_2.png",      // Your screenshot here
+        ],
+        // Add more features...
+    ]
+];
+```
 
-### ⛵ **Adventure-Themed Learning**
-- **Sail through a cosmic sea** of Bitcoin knowledge
-- Complete **quests and challenges** to unlock new concepts
-- Earn **rewards and achievements** as you progress
-- Visual storytelling that makes complex topics digestible
+### Step 3: Customize App Features
+Update the features that appear on your homepage:
 
-### 🧭 **Interactive Tools**
+```php
+// Features with icons (no screenshots needed)
+$featuresIcons = [
+    "featuresList" => [
+        [
+            "title" => "Fast & Reliable",
+            "description" => "Lightning fast performance",
+            "icon" => "speed",                       // Material Design icon name
+        ],
+        [
+            "title" => "Secure",
+            "description" => "Your data is always protected", 
+            "icon" => "security",
+        ],
+    ]
+];
+```
 
-#### 📊 **Price Compass**
-- Real-time Bitcoin price tracking with beautiful visualizations
-- Historical price analysis and trends
-- Market sentiment indicators
-- Educational explanations of price movements
+### Step 4: Add Customer Reviews
+```php
+$ratings = [
+    "ratingsList" => [
+        [
+            "title" => "John Smith",
+            "description" => "This app changed how I work!",
+            "rating" => 5,
+            "image" => "/assets/user_1.jpg",         // User photo (optional)
+        ],
+        // Add more reviews...
+    ]
+];
+```
 
-#### 💎 **DCA Treasure Planner**
-- Dollar-Cost Averaging calculator to plan your Bitcoin investments
-- Risk assessment tools
-- Portfolio optimization suggestions
-- Investment timeline visualization
+### Step 5: Update Footer & Contact Info
+```php
+$footer = [
+    'navigation' => [
+        ['title' => 'About', 'link' => '/about'],
+        ['title' => 'Features', 'link' => '/features'],
+        ['title' => 'Support', 'link' => '/contact'],
+    ],
+    'socials' => [
+        ['title' => 'Twitter', 'link' => 'https://twitter.com/yourapp'],
+        ['title' => 'Instagram', 'link' => 'https://instagram.com/yourapp'],
+    ],
+];
+```
 
-#### 🏆 **Community Features**
-- Connect with fellow Bitcoin learners
-- Share achievements and progress
-- Participate in educational challenges
-- Learn from experienced community members
+## 🎨 Design Options
 
-### 📚 **Comprehensive Learning Path**
-- **Beginner-friendly explanations** of Bitcoin fundamentals
-- **Progressive difficulty** that grows with your knowledge
-- **Real-world examples** and practical applications
-- **Interactive quizzes** to test your understanding
+### Screenshot Corners
+Set `'screenshotRoundedCorners' => false` in config.php for sharp, modern corners, or `true` for friendly rounded corners.
 
-## 🎯 Key Features
+### Colors
+The template uses a clean blue color scheme that works well for most apps. All colors are customizable through Tailwind CSS classes.
 
-- 🎮 **Gamified Learning Experience** - Turn Bitcoin education into an adventure
-- 📱 **Mobile-First Design** - Learn Bitcoin on-the-go, anywhere, anytime
-- 🧭 **Price Compass** - Track Bitcoin prices with educational insights
-- 💰 **DCA Treasure Planner** - Plan and optimize your Bitcoin investments
-- 👥 **Community Integration** - Connect with like-minded Bitcoin enthusiasts
-- 📊 **Progress Tracking** - Monitor your learning journey and achievements
-- 🔔 **Smart Notifications** - Stay updated with market movements and learning reminders
-- 🌙 **Dark/Light Mode** - Comfortable viewing in any environment
+## 📱 What You Get
 
-## 🚀 Getting Started
+- **Homepage**: Hero section, features, reviews, download CTA
+- **Contact Page**: Contact form and information
+- **FAQ Page**: Expandable questions and answers
+- **Legal Pages**: Privacy policies and terms (required for app stores)
+- **Smart Downloads**: Automatically detects user's device and shows correct download link
 
-1. **Download Odyssey** from the App Store or Google Play
-2. **Create your account** and customize your learning profile
-3. **Begin your journey** with the introductory quests
-4. **Track Bitcoin prices** using the Price Compass
-5. **Plan your investments** with the DCA Treasure Planner
-6. **Join the community** and share your progress
+## 🚀 Going Live
 
-## 🎨 Landing Page
+1. **Build for production**:
+   ```bash
+   npm run build
+   ```
 
-This repository contains the landing page for the Odyssey Bitcoin app, showcasing the app's features and benefits to potential users. The landing page features:
+2. **Upload files** to your web server
 
-- **Modern, responsive design** that works on all devices
-- **Interactive demonstrations** of app features
-- **Compelling call-to-actions** to drive downloads
-- **Educational content** about Bitcoin benefits
-- **Community testimonials** and success stories
+3. **Update app store links** in config.php with your real URLs
 
-## 🛠️ Technology Stack
+4. **Test on mobile** to ensure everything works correctly
 
-- **Framework**: Astro for static site generation
-- **Styling**: Tailwind CSS for responsive design
-- **Language**: TypeScript for type safety
-- **Package Manager**: pnpm for efficient dependency management
+## 💡 Tips for Success
 
-## 📱 App Screenshots
+- **Use high-quality screenshots** - they're the most important element
+- **Keep descriptions short** and focused on benefits
+- **Add real customer reviews** - they build trust
+- **Test on mobile devices** - most visitors will be on phones
+- **Update app store ratings** regularly in config.php
 
-<div align="center">
-  <img src="public/screenshots/1.jpg" alt="Odyssey App Screenshot 1" width="200">
-  <img src="public/screenshots/2.jpg" alt="Odyssey App Screenshot 2" width="200">
-  <img src="public/screenshots/3.jpg" alt="Odyssey App Screenshot 3" width="200">
-  <img src="public/screenshots/4.jpg" alt="Odyssey App Screenshot 4" width="200">
-</div>
+## 🆘 Need Help?
 
-## 🌟 Benefits of Using Odyssey
-
-### 🎓 **Educational Excellence**
-- Learn Bitcoin at your own pace
-- Interactive content that sticks
-- Gamified progression system
-- Comprehensive curriculum covering all aspects of Bitcoin
-
-### 💡 **Practical Application**
-- Real-time market data integration
-- Investment planning tools
-- Risk management education
-- Portfolio optimization guidance
-
-### 👥 **Community Support**
-- Connect with fellow Bitcoin learners
-- Share knowledge and experiences
-- Get help when you're stuck
-- Celebrate achievements together
-
-### 📈 **Investment Success**
-- Make informed Bitcoin investment decisions
-- Understand market cycles and trends
-- Develop long-term investment strategies
-- Minimize risks through education
-
-## 🎯 Target Audience
-
-- **Bitcoin Beginners** - Those new to cryptocurrency who want to learn
-- **Investors** - People interested in Bitcoin as an investment
-- **Students** - Individuals studying finance, technology, or economics
-- **Professionals** - Those working in finance who need to understand Bitcoin
-- **Entrepreneurs** - Business owners exploring Bitcoin integration
-
-## 🚀 Future Roadmap
-
-- **Advanced Trading Features** - More sophisticated investment tools
-- **NFT Integration** - Learn about Bitcoin-based digital assets
-- **DeFi Education** - Understanding decentralized finance
-- **Enterprise Features** - Tools for business Bitcoin adoption
-- **Multi-language Support** - Make Bitcoin education globally accessible
-
-## 📞 Contact & Support
-
-Have questions about Odyssey or Bitcoin? We're here to help!
-
-- **Email**: odysseybtcapp@gmail.com
-- **X/Twitter**: [tosinxogunjobi](https://x.com/tosinxogunjobi)
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🙏 Credits
-
-This landing page is built using the excellent [Mobile App Landing Template by sofiyevsr](https://github.com/sofiyevsr/mobile-app-landing-template), which provided a solid foundation for creating an effective and visually appealing landing page. We're grateful for the open-source community that makes projects like this possible.
+- Check `config.php` - 90% of customization happens there
+- All images go in `/assets/` folder
+- Run `npm run build` after making changes
+- Test with `php -S localhost:8000`
 
 ---
 
-<div align="center">
-  <strong>Start your Bitcoin odyssey today! 🚀</strong><br>
-  <em>Because everyone deserves to understand the future of money.</em>
-</div>
+**Ready to showcase your app? Start customizing config.php! 🚀**
