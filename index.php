@@ -109,9 +109,6 @@ require_once 'config.php';
                              class="w-full   <?php echo $heroImageCornerClass; ?>   transition-all duration-500">
                      </div>
                     
-                    <!-- Floating Elements -->
-                    <div class="absolute top-1/3 -left-8 w-12 h-12 bg-green-400 rounded-full opacity-15 animate-ping delay-500"></div>
-                    <div class="absolute bottom-1/3 -right-8 w-8 h-8 bg-yellow-400 rounded-full opacity-25 animate-bounce delay-700"></div>
                 </div>
             </div>
         </div>
