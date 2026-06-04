@@ -33,22 +33,25 @@ $common = [
 
 // features with screenshots
 $featuresScreenshots = [
-    "title" => "Powerful Features to Master Bitcoin",
+    "title" => "Your Bitcoin Toolkit",
     "description" => "Discover the tools that make learning Bitcoin engaging and effective.",
     "featuresList" => [
         [
+            "badge" => "Play",
             "title" => "Interactive Quests",
             "description" => "Learn Bitcoin step-by-step through gamified quests designed for beginners.",
-            "image" => "/assets/feature_services.webp",
+            "image" => "/assets/quests.png",
         ],
         [
+            "badge" => "Monitor",
             "title" => "Real-Time Price Tracking",
             "description" => "Monitor Bitcoin prices live with accurate, up-to-date data.",
-            "image" => "/assets/feature_payment_date.webp",
+            "image" => "/assets/price.png",
         ],
         [
-            "title" => "Bitcoin History",
-            "description" => "Dive into Bitcoin's story with interactive timelines and insights.",
+            "badge" => "Explore",
+            "title" => "Explore",
+            "description" => "Glossary, resources, and Bitcoin history — all in one place.",
             "image" => "/assets/feature_darkmode.webp",
         ],
     ]
