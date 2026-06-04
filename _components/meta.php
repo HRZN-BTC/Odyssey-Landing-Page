@@ -40,7 +40,7 @@ require_once __DIR__ . '/../config.php';
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
 
 <!-- Styles -->
-<link href="./dist/output.css" rel="stylesheet">
+<link href="/dist/output.css" rel="stylesheet">
 
 <!-- Custom Font Styles -->
 <style>
