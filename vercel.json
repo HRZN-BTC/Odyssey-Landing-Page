@@ -1,0 +1,15 @@
+{
+  "functions": {
+    "*.php": {
+      "runtime": "vercel-php@0.6.0"
+    }
+  },
+  "routes": [
+    { "src": "/", "dest": "/index.php" },
+    { "src": "/faq", "dest": "/faq.php" },
+    { "src": "/contact", "dest": "/contact.php" },
+    { "src": "/download", "dest": "/download.php" },
+    { "src": "/privacy-policy", "dest": "/privacy-policy.php" },
+    { "src": "/terms-and-conditions", "dest": "/terms-and-conditions.php" }
+  ]
+}
