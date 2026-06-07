@@ -25,8 +25,8 @@ require_once __DIR__ . '/../config.php';
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@hrznbtc">
 <meta name="twitter:title" content="<?php echo isset($pageTitle) ? $pageTitle . ' - ' . $common['appName'] : $common['appTitle']; ?>">
-<meta name="twitter:description" content="<?php echo isset($pageTitle) ? $pageDescription : 'Learn Bitcoin through a fun, gamified adventure. Quizzes, daily facts, streaks, and simple tools help you understand Bitcoin without jargon, hype, or trading — just learning at your pace.'; ?>">
-<meta name="twitter:image" content="/assets/odyssey_twitter_card.png">
+<meta name="twitter:description" content="<?php echo isset($pageDescription) ? $pageDescription : 'Learn Bitcoin through a fun, gamified adventure. Quizzes, daily facts, streaks, and simple tools help you understand Bitcoin without jargon, hype, or trading — just learning at your pace.'; ?>">
+<meta name="twitter:image" content="<?php echo 'https://' . $_SERVER['HTTP_HOST'] . '/assets/odyssey_twitter_card.png'; ?>">
 
 <!-- Favicon -->
 <link rel="icon" href="<?php echo $common['appIcon']; ?>" type="image/png">
